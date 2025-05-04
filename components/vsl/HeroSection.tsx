@@ -13,7 +13,7 @@ export default function HeroSection() {
     const [isMouseInSection, setIsMouseInSection] = useState(false);
     const [isVideoTransitioning, setIsVideoTransitioning] = useState(false);
     const sectionRef = useRef<HTMLElement | null>(null);
-    const videoId = "Jv_mGIZ7hM8";
+    const videoId = "17gCxSKpz54";
     const thumbnailUrl = `https://i3.ytimg.com/vi/${videoId}/sddefault.jpg`;
 
     useEffect(() => {
