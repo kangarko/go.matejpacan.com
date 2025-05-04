@@ -22,27 +22,43 @@ export default function UrgencyHeader() {
 
     useEffect(() => {
         let lastScroll = window.scrollY;
-
         const handleScroll = () => {
             const currentScroll = window.scrollY;
-            setIsVisible(currentScroll <= lastScroll || currentScroll < 100);
+            if (window.innerWidth >= 768) {
+                setIsVisible(currentScroll <= lastScroll || currentScroll < 100);
+            }
             lastScroll = currentScroll;
         };
 
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        window.addEventListener('resize', () => {
+            if (window.innerWidth < 768) {
+                setIsVisible(true);
+            } else {
+                handleScroll();
+            }
+        });
+        
+        if (window.innerWidth < 768) {
+            setIsVisible(true);
+        }
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleScroll);
+        }
     }, []);
 
     return (
         <motion.div
             ref={headerRef}
-            initial={{ y: -100 }}
+            initial={{ y: 0 }}
             animate={{
-                y: isVisible ? 0 : -100,
-                opacity: isVisible ? 1 : 0
+                y: isVisible ? 0 : (window.innerWidth >= 768 ? -100 : 0),
+                opacity: isVisible ? 1 : (window.innerWidth >= 768 ? 0 : 1),
             }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/30 border-b border-yellow-500/20"
+            className="relative md:fixed md:top-0 md:left-0 md:right-0 md:z-50 backdrop-blur-md bg-black/30 border-b border-yellow-500/20"
         >
             <div className="py-4 px-4">
                 <div className="container max-w-6xl mx-auto">

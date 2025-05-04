@@ -66,7 +66,7 @@ export default function HeroSection() {
     return (
         <section 
             ref={sectionRef}
-            className="relative min-h-[90vh] flex flex-col items-center justify-center px-4 pt-32 pb-20 overflow-hidden bg-gray-950" 
+            className="relative min-h-[90vh] flex flex-col items-center justify-center px-4 pt-8 md:pt-32 pb-20 overflow-hidden bg-gray-950" 
             style={{ perspective: "1000px" }}
         >
             {/* Background image */}

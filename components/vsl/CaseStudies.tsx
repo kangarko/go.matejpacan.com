@@ -129,7 +129,7 @@ export default function CaseStudies() {
                                         <p className="text-gray-400">{study.description}</p>
                                     </div>
 
-                                    <div className="grid grid-cols-3 gap-4 mb-8">
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                                         {study.metrics.map((metric, index) => (
                                             <div key={index} className="bg-gray-800/50 rounded-lg p-4 text-center">
                                                 <div className="text-xl font-bold text-yellow-400 mb-1">{metric.value}</div>

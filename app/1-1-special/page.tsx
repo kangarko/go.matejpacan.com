@@ -7,6 +7,7 @@ import FooterSection from "@/components/vsl/FooterSection";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import UrgencyHeader from "@/components/vsl/UrgencyHeader";
 import CalendlyEmbed from "@/components/vsl/CalendlyEmbed";
+import Testimonials from "@/components/vsl/Testimonials";
 
 export const metadata: Metadata = {
     title: "1-on-1 Coaching Opportunity | Beginner Offer",
@@ -19,6 +20,7 @@ export default function SpecialOfferPage() {
             <main className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 text-white">
                 <UrgencyHeader />
                 <HeroSection />
+                <Testimonials />
                 <CaseStudies />
                 <AboutSection />
                 <OfferSection />

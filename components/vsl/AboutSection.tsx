@@ -13,11 +13,11 @@ export default function AboutSection() {
 
     const credentials = [
         {
-            title: "CEO/Founder @ MineAcademy.org",
+            title: "CEO/Founder of MineAcademy.org",
             description: "550k revenue, 1M+ app downloads, #1 in the niche",
         },
         {
-            title: "(Ex) COO @ SourceHacker.com",
+            title: "Ex-COO of SourceHacker.com",
             description: "1.3M revenue, 3k successful students",
         },
     ];
@@ -61,7 +61,7 @@ export default function AboutSection() {
                                             </div>
                                         </div>
                                         <div>
-                                            <h4 className="text-lg font-semibold text-white">{credential.title}</h4>
+                                            <h4 className="text-md font-semibold text-white">{credential.title}</h4>
                                             <p className="text-gray-400">{credential.description}</p>
                                         </div>
                                     </div>
