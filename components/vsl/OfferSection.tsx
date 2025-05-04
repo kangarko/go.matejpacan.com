@@ -102,13 +102,9 @@ export default function OfferSection() {
                                     <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center mr-4 group-hover:bg-red-500/20 transition-colors">
                                         <span className="text-red-400">✗</span>
                                     </span>
-                                    <span>No adult, crypto, or MLM offers, no scum. Most people know they are selling crap, if you are one of them, don't bother.</span>
+                                    <span>No dropshipping, crypto, or adult offers. Most people know if they are selling crap, if you are one of them, don't bother.</span>
                                 </li>
                             </ul>
-
-                            <div className="text-center">
-                                <CallToActionButton />
-                            </div>
                         </div>
                     </div>
                 </motion.div>

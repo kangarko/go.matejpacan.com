@@ -49,7 +49,7 @@ export default function UrgencyHeader() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left space-y-1">
               <p className="font-semibold tracking-wide">
-                <span className="text-yellow-400">1:1 Mentoring Program</span>
+                <span className="text-yellow-400">1:1 Beginner Mentoring Program</span>
                 <span className="mx-2">•</span>
                 <span className="text-gray-200">Ends {endDate}</span>
               </p>

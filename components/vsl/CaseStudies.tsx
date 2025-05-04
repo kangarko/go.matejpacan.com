@@ -11,11 +11,11 @@ const caseStudies = [
         id: "beginner",
         name: "Mikolaj",
         role: "Software Developer to Coach",
-        title: "Beginner: $0 to $12k in 90 Days",
+        title: "Beginner: $0 to $27k/mo in 90 Days",
         metrics: [
-            { label: "Revenue", value: "$12,000" },
-            { label: "Timeframe", value: "90 Days" },
-            { label: "Clients", value: "10" },
+            { label: "Revenue", value: "$27,273/mo" },
+            { label: "Profit", value: "$13,875/mo" },
+            { label: "Timeframe", value: "3 Months" },
         ],
         highlights: [
             "Zero prior business experience",
@@ -23,7 +23,7 @@ const caseStudies = [
             "High-paying retainer clients",
             "Had to pause ads due to demand"
         ],
-        description: "Mikolaj worked a 9-5 job as a computer programmer with zero business experience. He'd never closed a client, made a VSL, or written an ad before. He picked a challenging niche – helping high school students prepare for exams and overcome procrastination. In 3 months, Mikolaj went from 0 to over $12,000 in revenue from 10 high-paying, retainer clients and had to pause his ads to deliver on his promises and build his course.",
+        description: "Mikolaj worked a 9-5 job as a computer programmer with zero business experience. He'd never closed a client, made a VSL, or written an ad before. He picked a challenging niche – helping high school students prepare for exams and overcome procrastination. In 3 months, Mikolaj first build a VSL funnel and went from 0 to over $12,000/mo from 10 high-paying, retainer clients and then he went onto building an automated webinar funnel scaling past $27k/mo.",
         image: "./mikolaj.png"
     },
     {
@@ -88,7 +88,7 @@ export default function CaseStudies() {
                         Results For All Experience Levels*
                     </h2>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                        *Your results will vary based on factors such as work ethic, emotional baggage, persistence, market conditions, and more.
+                        *Your results will vary based on factors such as work ethic, emotional baggage, ego, persistence, market conditions, and more.
                     </p>
                 </motion.div>
 
