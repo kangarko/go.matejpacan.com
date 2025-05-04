@@ -1,29 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Play, Sparkles } from "lucide-react";
-import { DollarSign } from "lucide-react";
 import { motion } from "framer-motion";
 import CallToActionButton from "./CallToActionButton";
-// Keep the updated background import if needed, or revert if not
-// import CosmicBackground from "./CosmicBackground"; 
-import Image from 'next/image'; // Import Next.js Image component
-// Remove YouTubePlayerOverlay import
-// import YouTubePlayerOverlay from "./YouTubePlayerOverlay"; 
-
-// --- Animated Play Button --- (Keep styles)
-const playButtonStyles = `
-  .play-button {
-    transition: transform 0.2s ease-out, background-color 0.2s ease-out;
-  }
-  .play-button:hover {
-    transform: scale(1.15);
-    background-color: #facc15; /* Slightly brighter yellow on hover */
-  }
-  .play-button:active {
-    transform: scale(1.05);
-  }
-`;
+import Image from 'next/image';
 
 export default function HeroSection() {
     const [isVisible, setIsVisible] = useState(false);
@@ -44,8 +25,8 @@ export default function HeroSection() {
             <Image
                 src="/photoshoot-2.webp"
                 alt="Background photoshoot"
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
                 quality={75}
                 className="absolute inset-0 z-0 filter grayscale opacity-15"
                 priority
@@ -82,7 +63,6 @@ export default function HeroSection() {
                     </p>
                 </motion.div>
 
-                {/* Video and CTA container */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: isVisible ? 1 : 0 }}

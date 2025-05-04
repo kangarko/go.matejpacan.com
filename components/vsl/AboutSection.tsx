@@ -86,8 +86,8 @@ export default function AboutSection() {
                             <Image
                                 src="/photoshoot-2.webp"
                                 alt="My Story and Values"
-                                layout="fill"
-                                objectFit="cover"
+                                fill
+                                style={{ objectFit: "cover" }}
                                 className="object-center"
                             />
                         </div>

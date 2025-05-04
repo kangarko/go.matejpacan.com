@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { CheckCircle, InfoIcon } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import CallToActionButton from "./CallToActionButton";
 
 const caseStudies = [

@@ -2,8 +2,6 @@
 
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Clock, DollarSign, Users } from "lucide-react";
-import CallToActionButton from "./CallToActionButton";
 
 export default function OfferSection() {
     const { ref, inView } = useInView({
