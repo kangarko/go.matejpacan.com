@@ -25,7 +25,7 @@ export default function SpecialOfferPage() {
                 <section id="strategy-call" className="py-10 md:py-20 bg-gray-900">
                     <div className="container max-w-4xl mx-auto px-4">
                         <div className="text-center mb-10">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+                            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
                                 Book Your Strategy Call
                             </h2>
                             <p className="text-lg text-gray-400">

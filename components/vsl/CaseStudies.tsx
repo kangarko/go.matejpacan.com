@@ -84,7 +84,7 @@ export default function CaseStudies() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+                    <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
                         Results For All Experience Levels*
                     </h2>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -125,7 +125,7 @@ export default function CaseStudies() {
                                         <span className="text-yellow-400 font-medium text-sm tracking-wider uppercase mb-2 block">
                                             {study.role}
                                         </span>
-                                        <h3 className="text-2xl font-bold mb-4">{study.title}</h3>
+                                        <h3 className="font-heading text-2xl font-bold mb-4">{study.title}</h3>
                                         <p className="text-gray-400">{study.description}</p>
                                     </div>
 

@@ -26,7 +26,7 @@ export default function OfferSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+                    <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
                         Limited-Time Opportunity
                     </h2>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -42,7 +42,7 @@ export default function OfferSection() {
                 >
                     <div className="grid md:grid-cols-2 gap-10">
                         <div>
-                            <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                            <h3 className="font-heading text-2xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                                 How Does It Work
                             </h3>
                             <ul className="space-y-4">
@@ -80,7 +80,7 @@ export default function OfferSection() {
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                            <h3 className="font-heading text-2xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                                 Who This Is For
                             </h3>
                             <ul className="space-y-4 mb-8">

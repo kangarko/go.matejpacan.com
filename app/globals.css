@@ -53,8 +53,19 @@
 }
 
 @layer base {
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
+    /* Premium Typography */
+    h1, h2, h3, h4, h5, h6 {
+        letter-spacing: -0.02em;
+    }
+    
+    .font-heading {
+        letter-spacing: -0.02em;
+    }
+    
+    p {
+        letter-spacing: 0.01em;
+    }
+    
     :root {
         --background: 0 0% 100%;
         --foreground: 0 0% 3.9%;

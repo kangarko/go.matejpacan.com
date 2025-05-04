@@ -34,7 +34,7 @@ export default function AboutSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+                    <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
                         Why Work With Me?
                     </h2>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -49,7 +49,7 @@ export default function AboutSection() {
                         className="rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border border-gray-800/50"
                     >
                         <div className="p-8">
-                            <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                            <h3 className="font-heading text-2xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                                 My Credentials
                             </h3>
                             <div className="space-y-6">
@@ -168,7 +168,7 @@ export default function AboutSection() {
                 >
                     <div className="grid md:grid-cols-2 gap-10 items-center">
                         <div>
-                            <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                            <h3 className="font-heading text-2xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                                 My Coaching Philosophy
                             </h3>
                             <p className="text-gray-300 mb-6">

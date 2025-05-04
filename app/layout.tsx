@@ -1,9 +1,29 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Playfair_Display, Manrope, Cormorant_Garamond } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
-const inter = Inter({ subsets: ['latin'] });
+// Premium fonts
+const playfair = Playfair_Display({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-playfair',
+    weight: ['400', '500', '600', '700']
+});
+
+const manrope = Manrope({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-manrope',
+    weight: ['200', '300', '400', '500', '600', '700', '800']
+});
+
+const cormorant = Cormorant_Garamond({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-cormorant',
+    weight: ['300', '400', '500', '600', '700']
+});
 
 export const metadata: Metadata = {
     title: 'Matej Pacan | 1-on-1 Coaching',
@@ -16,8 +36,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" suppressHydrationWarning>
-            <body className={inter.className}>
+        <html lang="en" suppressHydrationWarning className={`${playfair.variable} ${manrope.variable} ${cormorant.variable}`}>
+            <body className={manrope.className}>
                 <ThemeProvider>
                     {children}
                 </ThemeProvider>

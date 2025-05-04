@@ -42,7 +42,7 @@ export default function FooterSection() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="border-t border-gray-800 pt-6 text-center text-xs"
                 >
-                    <p>© {new Date().getFullYear()} | Design & copy by Matej Pacan (Yes, I built this site myself)</p>
+                    <p>© {new Date().getFullYear()} | Design & copy by Matej Pacan (Yes, <a href="https://github.com/kangarko/go.matejpacan.com" className="underline hover:text-white transition-colors">I built this site myself</a>)</p>
                     <p className="mt-2">
                         <a href="https://matejpacan.com/privacy" className="hover:text-white transition-colors">Privacy Policy</a> | <a href="https://matejpacan.com/terms" className="hover:text-white transition-colors">Terms of Service</a>
                     </p>
